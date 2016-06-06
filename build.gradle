@@ -68,6 +68,10 @@ project(":core") {
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
+        compile "com.esotericsoftware:kryo:3.0.3"
+ 		compile ("com.esotericsoftware:kryonet:2.22.0-RC1") {
+			exclude module : 'kryo'
+		}
     }
 }
 
